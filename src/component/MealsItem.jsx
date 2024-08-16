@@ -1,5 +1,6 @@
 import React from 'react';
 import { currencyFormatter } from '../util/formatting';
+import Button from './UI/Button';
 
 export default function MealsItems({meal}) {
   return (
@@ -13,7 +14,7 @@ export default function MealsItems({meal}) {
         </div>
 
         <p className='meal-item-actions'>
-            <button>Add to cart</button>
+            <Button>Add to cart</Button>
         </p>
     </article>
   </li>)
