@@ -3,7 +3,8 @@
 import Header from "./component/Header";
 import Meals from "./component/Meals";
 import { CartContextProvider } from "./store/CartContext";
-
+import { UserProgressContextProvider } from "./store/UserProgressContext";
+import Cart from "./component/Cart";
 
 function App() {
   // useEffect(() => {
@@ -13,10 +14,13 @@ function App() {
   // }, []);
 
   return (
-    <CartContextProvider>
-     <Header />
-     <Meals />
-       </CartContextProvider>
+    <UserProgressContextProvider>
+      <CartContextProvider>
+        <Header />
+        <Meals />
+        <Cart />
+      </CartContextProvider>
+    </UserProgressContextProvider>
   );
 }
 
