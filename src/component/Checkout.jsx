@@ -16,7 +16,6 @@ const requestConfig = {
     }
 }
 
-
 export default function Checkout() {
     const cartCtx = useContext(CartContext);
     const userProgressCtx = useContext(UserProgressContext)
@@ -84,8 +83,6 @@ export default function Checkout() {
         </Modal>
         );
     }
-
-
     return (
         <Modal open={userProgressCtx.progress === 'checkout'} onClose={handleClose} >
             <form onSubmit={handleSubmit}>
