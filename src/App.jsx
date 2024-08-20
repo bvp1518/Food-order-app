@@ -5,6 +5,7 @@ import Meals from "./component/Meals";
 import { CartContextProvider } from "./store/CartContext";
 import { UserProgressContextProvider } from "./store/UserProgressContext";
 import Cart from "./component/Cart";
+import Checkout from "./component/Checkout";
 
 function App() {
   // useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
         <Header />
         <Meals />
         <Cart />
+        <Checkout />
       </CartContextProvider>
     </UserProgressContextProvider>
   );
